@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>初级测试</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<style type="text/css">
+.demo{width:760px; margin:60px auto 10px auto}
+	body{background-image: url(../img/purplebg.png);
+	background-repeat: no-repeat;
+	background-size: 100%;}
+</style>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="quiz.js"></script>
+<script type="text/javascript">
+var init={'questions':[{'question':'以下哪位不是传说中的人物','answers':['娥皇','褒姒','女英','洛神'],'correctAnswer':2},{'question':'与褒姒有关的历史事件是?','answers':['牝鸡司晨','酒池肉林','烽火戏诸侯','河东狮吼'],'correctAnswer':3},{'question':'符合钟无艳的形象是：','answers':['才貌双全','有才无德','智勇定齐','以上都不是'],'correctAnswer':3},{'question':'碧海青天夜夜心讲的是：','answers':['妲己','嫦娥','白素贞','吕皇后'],'correctAnswer':2}]};
+
+$(function(){
+	$('#quiz-container').jquizzy({
+        questions: init.questions
+    });
+});
+</script>
+</head>
+
+<body>
+<a href="../index.html"><img src="../img/game1/返回.png"></a>
+<div class="demo" >
+	<div id='quiz-container' style="width:700px;height: 400px;text-align: center;padding-top:20px;padding-bottom: 20px; padding-left: 100px;font-size: 30px;margin-top: 250px;"></div>
+</div>
+
+
+</body>
+</html>
